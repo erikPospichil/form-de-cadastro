@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Formulário de Registro</title>
+    <title>Formulário de Cadastro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Formulário de Registro</h1>
+    <h1>Formulário de Cadastro</h1>
     <p>Por favor, preencha o formulário com as informações solicitadas</p>
     <form method="post" action="https://register-demo.freecodecamp.org"></form>
     <fieldset>
@@ -18,6 +18,16 @@
         <label for="email">Digite seu e-mail: <input id="email" name="email" type="email" required></label>
         <label for="nova-senha">Crie uma nova senha: <input id="nova-senha" name="nova-senha" type="password"
                 pattern="[a-z0-5]{8,}" required></label>
+    </fieldset>
+    <fieldset>
+        <label for="conta-pessoal"><input id="conta-pessoal" type="radio" name="tipo-de-conta" class="inline">
+            Conta Pessoal</label>
+        <label for="conta-empresarial"><input id="conta-empresarial" type="radio" name="tipo-de-conta" class="inline">
+            Conta Empresarial</label>
+        <label for="termos-e-condicoes">
+            <input id="termos-e-condicoes" type="checkbox" required name="termos-e-condicoes" class="inline"> Eu
+            aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
+        </label>
     </fieldset>
 </body>
 
