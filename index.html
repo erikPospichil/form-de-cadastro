@@ -29,6 +29,26 @@
             aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
         </label>
     </fieldset>
+    <fieldset>
+        <label for="foto-perfil">Carregue uma foto de perfil: <input id="foto-perfil" type="file"
+                name="arquivo"></label>
+        <label for="idade">Digite sua idade (anos): <input id="idade" type="number" name="idade" min="13"
+                max="120"></label>
+        <label for="referencia">Como você soube de nós?
+            <select id="referencia" name="referencia">
+                <option value="">(selecione uma opção)</option>
+                <option value="1">Blog de Notícias</option>
+                <option value="2">Canal do YouTube</option>
+                <option value="3">Fórum</option>
+                <option value="4">Outra</option>
+            </select>
+        </label>
+        <label for="bio">Fale um pouco sobre você:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu gosto de codar na praia..."></textarea>
+        </label>
+    </fieldset>
+    <input type="submit" value="Enviar">
+
 </body>
 
 </html>
