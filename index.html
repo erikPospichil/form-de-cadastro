@@ -8,7 +8,17 @@
 </head>
 
 <body>
-
+    <h1>Formulário de Registro</h1>
+    <p>Por favor, preencha o formulário com as informações solicitadas</p>
+    <form method="post" action="https://register-demo.freecodecamp.org"></form>
+    <fieldset>
+        <label for="primeiro-nome">Digite seu primeiro nome: <input id="primeiro-nome" name="primeiro-nome" type="text"
+                required></label>
+        <label for="sobrenome">Digite seu sobrenome:<input id="sobrenome" name="sobrenome" type="text" required></label>
+        <label for="email">Digite seu e-mail: <input id="email" name="email" type="email" required></label>
+        <label for="nova-senha">Crie uma nova senha: <input id="nova-senha" name="nova-senha" type="password"
+                pattern="[a-z0-5]{8,}" required></label>
+    </fieldset>
 </body>
 
 </html>
