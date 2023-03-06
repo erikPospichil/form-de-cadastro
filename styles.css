@@ -33,15 +33,6 @@ label {
     margin: 0.5rem 0;
 }
 
-input {
-    background-color: #0a0a23;
-    border: 1px solid #0a0a23;
-    color: #ffffff;
-    margin: 10px 0 0 0;
-    min-height: 2em;
-    width: 100%;
-}
-
 .inline {
     width: unset;
     margin: 0 0.5em 0 0;
@@ -50,4 +41,38 @@ input {
 
 a {
     color: #dfdfe2;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    min-height: 2em;
+    width: 100%;
+}
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input[type="submit"] {
+    background-color: #3b3b4f;
+    border-color: white;
+    display: block;
+    font-size: 1.1rem;
+    height: 2em;
+    margin: 1em auto;
+    min-width: 300px;
+    width: 60%;
 }

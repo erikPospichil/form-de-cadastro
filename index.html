@@ -10,45 +10,47 @@
 <body>
     <h1>Formulário de Cadastro</h1>
     <p>Por favor, preencha o formulário com as informações solicitadas</p>
-    <form method="post" action="https://register-demo.freecodecamp.org"></form>
-    <fieldset>
-        <label for="primeiro-nome">Digite seu primeiro nome: <input id="primeiro-nome" name="primeiro-nome" type="text"
-                required></label>
-        <label for="sobrenome">Digite seu sobrenome:<input id="sobrenome" name="sobrenome" type="text" required></label>
-        <label for="email">Digite seu e-mail: <input id="email" name="email" type="email" required></label>
-        <label for="nova-senha">Crie uma nova senha: <input id="nova-senha" name="nova-senha" type="password"
-                pattern="[a-z0-5]{8,}" required></label>
-    </fieldset>
-    <fieldset>
-        <label for="conta-pessoal"><input id="conta-pessoal" type="radio" name="tipo-de-conta" class="inline">
-            Conta Pessoal</label>
-        <label for="conta-empresarial"><input id="conta-empresarial" type="radio" name="tipo-de-conta" class="inline">
-            Conta Empresarial</label>
-        <label for="termos-e-condicoes">
-            <input id="termos-e-condicoes" type="checkbox" required name="termos-e-condicoes" class="inline"> Eu
-            aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
-        </label>
-    </fieldset>
-    <fieldset>
-        <label for="foto-perfil">Carregue uma foto de perfil: <input id="foto-perfil" type="file"
-                name="arquivo"></label>
-        <label for="idade">Digite sua idade (anos): <input id="idade" type="number" name="idade" min="13"
-                max="120"></label>
-        <label for="referencia">Como você soube de nós?
-            <select id="referencia" name="referencia">
-                <option value="">(selecione uma opção)</option>
-                <option value="1">Blog de Notícias</option>
-                <option value="2">Canal do YouTube</option>
-                <option value="3">Fórum</option>
-                <option value="4">Outra</option>
-            </select>
-        </label>
-        <label for="bio">Fale um pouco sobre você:
-            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu gosto de codar na praia..."></textarea>
-        </label>
-    </fieldset>
-    <input type="submit" value="Enviar">
-
+    <form method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label for="primeiro-nome">Digite seu primeiro nome: <input id="primeiro-nome" name="primeiro-nome"
+                    type="text" required></label>
+            <label for="sobrenome">Digite seu sobrenome:<input id="sobrenome" name="sobrenome" type="text"
+                    required></label>
+            <label for="email">Digite seu e-mail: <input id="email" name="email" type="email" required></label>
+            <label for="nova-senha">Crie uma nova senha: <input id="nova-senha" name="nova-senha" type="password"
+                    pattern="[a-z0-5]{8,}" required></label>
+        </fieldset>
+        <fieldset>
+            <label for="conta-pessoal"><input id="conta-pessoal" type="radio" name="tipo-de-conta" class="inline">
+                Conta Pessoal</label>
+            <label for="conta-empresarial"><input id="conta-empresarial" type="radio" name="tipo-de-conta"
+                    class="inline">
+                Conta Empresarial</label>
+            <label for="termos-e-condicoes">
+                <input id="termos-e-condicoes" type="checkbox" required name="termos-e-condicoes" class="inline"> Eu
+                aceito os <a href="https://www.freecodecamp.org/news/terms-of-service/">termos e condições</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="foto-perfil">Carregue uma foto de perfil: <input id="foto-perfil" type="file"
+                    name="arquivo"></label>
+            <label for="idade">Digite sua idade (anos): <input id="idade" type="number" name="idade" min="13"
+                    max="120"></label>
+            <label for="referencia">Como você soube de nós?
+                <select id="referencia" name="referencia">
+                    <option value="">(selecione uma opção)</option>
+                    <option value="1">Blog de Notícias</option>
+                    <option value="2">Canal do YouTube</option>
+                    <option value="3">Fórum</option>
+                    <option value="4">Outra</option>
+                </select>
+            </label>
+            <label for="bio">Fale um pouco sobre você:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Eu gosto de codar na praia..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 
 </html>
